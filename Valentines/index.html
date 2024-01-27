@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title></title>
+</head>
+<body>
+ <div class="heart"></div>
+ <script type="text/javascript">
+ 	document.addEventListener('mousemove', function(e){
+ 		Let body = document.querySelector('body');
+ 		Let Heart = document.creatElement('span');
+ 		Let x = e.offsetX;
+ 		Let y = e.offesetY;
+ 		heart.style.left = x+'px';
+ 		heart.style.top = y+'px';
+
+ 		body.appendchild(heart);
+
+ 		setTimeout(function(){
+ 			heart.remove();
+ 		},1000
+ 		
+ 	})
+ </script>
+</body>
+</html>
